@@ -78,9 +78,12 @@
 					<layers>
 						<enabled>true</enabled>
 					</layers>
-<!--					<image>-->
-<!--						<builder>paketobuildpacks/builder-jammy-base:latest</builder>-->
-<!--					</image>-->
+                    <image>
+                        <builder>paketobuildpacks/builder-jammy-base:latest</builder>
+						<env>
+							<BPE_JAVA_TOOL_OPTIONS>-Xss256K -XX:ReservedCodeCacheSize=64M -XX:MaxMetaspaceSize=64 -Xmx64M</BPE_JAVA_TOOL_OPTIONS>
+						</env>
+                    </image>
 				</configuration>
 			</plugin>
 		</plugins>
