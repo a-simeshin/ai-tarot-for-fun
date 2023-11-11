@@ -79,9 +79,13 @@
 						<enabled>true</enabled>
 					</layers>
                     <image>
-                        <builder>paketobuildpacks/builder:tiny</builder>
+                        <builder>paketobuildpacks/builder-jammy-base:latest</builder>
                     </image>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.graalvm.buildtools</groupId>
+				<artifactId>native-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
 	</build>
