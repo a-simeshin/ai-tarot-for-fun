@@ -79,10 +79,7 @@
 						<enabled>true</enabled>
 					</layers>
                     <image>
-                        <builder>paketobuildpacks/builder-jammy-base:latest</builder>
-						<env>
-							<BPE_JAVA_TOOL_OPTIONS>-XX:MaxDirectMemorySize=10M, -XX:MaxMetaspaceSize=92895K, -XX:ReservedCodeCacheSize=240M, -Xss1M</BPE_JAVA_TOOL_OPTIONS>
-						</env>
+                        <builder>paketobuildpacks/builder:tiny</builder>
                     </image>
 				</configuration>
 			</plugin>
