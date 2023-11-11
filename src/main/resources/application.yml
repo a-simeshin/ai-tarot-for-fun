@@ -1,0 +1,8 @@
+telegram:
+  api-key: ${TELEGRAM_API_KEY}
+
+chat-gpt:
+  api-key: ${CHAT_GPT_API_KEY}
+
+server:
+  port: ${PORT:8080}
